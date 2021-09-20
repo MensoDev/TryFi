@@ -1,0 +1,2 @@
+# TryFi
+Hotspot TryFi
