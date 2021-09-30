@@ -2,7 +2,7 @@
 
 namespace TryFi.Hotspot.Domain.Entities
 {
-    public class Plan : Entity
+    public class Plan : Entity, IAggregateRoot
     {
 
         public Plan(string name, string upload, string download)
