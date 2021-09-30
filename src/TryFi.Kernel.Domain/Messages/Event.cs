@@ -1,0 +1,14 @@
+﻿using MediatR;
+
+namespace TryFi.Kernel.Domain.Messages
+{
+    public abstract class Event : Message, INotification
+    {
+        public DateTime Timestamp { get; private set; }
+
+        public Event()
+        {
+            Timestamp = DateTime.Now;
+        }
+    }
+}

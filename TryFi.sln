@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{298FC5D0-5814-4BC1-9F3B-3B755712E87B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Interfaces - UI", "2 - Interfaces - UI", "{34DE9A45-1291-48EF-9C9D-E591B736BFDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Tools", "3 - Tools", "{524BF7EF-E2F0-4B1B-B7D8-4BBAE160287F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Kernel", "1 - Kernel", "{19CD36BC-9F80-456A-A89F-E6DABE417FE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - AAA", "2 - AAA", "{B70D9F73-E1FC-4E19-B34C-C4D0EA683658}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Hotspot", "3 - Hotspot", "{E575AECC-E71C-4A29-ACEA-285E96096179}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Network", "4 - Network", "{0D99D77E-BD5C-4751-B5B8-81516CE52E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryFi.Kernel.Domain", "src\TryFi.Kernel.Domain\TryFi.Kernel.Domain.csproj", "{76A7A43C-7556-4B13-95C0-0BBE36E57688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryFi.Hotspot.Domain", "src\TryFi.Hotspot.Domain\TryFi.Hotspot.Domain.csproj", "{253BE271-4A5C-4458-92DD-D537AB0BEEC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76A7A43C-7556-4B13-95C0-0BBE36E57688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A7A43C-7556-4B13-95C0-0BBE36E57688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A7A43C-7556-4B13-95C0-0BBE36E57688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A7A43C-7556-4B13-95C0-0BBE36E57688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{253BE271-4A5C-4458-92DD-D537AB0BEEC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253BE271-4A5C-4458-92DD-D537AB0BEEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253BE271-4A5C-4458-92DD-D537AB0BEEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{253BE271-4A5C-4458-92DD-D537AB0BEEC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19CD36BC-9F80-456A-A89F-E6DABE417FE3} = {298FC5D0-5814-4BC1-9F3B-3B755712E87B}
+		{B70D9F73-E1FC-4E19-B34C-C4D0EA683658} = {298FC5D0-5814-4BC1-9F3B-3B755712E87B}
+		{E575AECC-E71C-4A29-ACEA-285E96096179} = {298FC5D0-5814-4BC1-9F3B-3B755712E87B}
+		{0D99D77E-BD5C-4751-B5B8-81516CE52E24} = {298FC5D0-5814-4BC1-9F3B-3B755712E87B}
+		{76A7A43C-7556-4B13-95C0-0BBE36E57688} = {19CD36BC-9F80-456A-A89F-E6DABE417FE3}
+		{253BE271-4A5C-4458-92DD-D537AB0BEEC9} = {E575AECC-E71C-4A29-ACEA-285E96096179}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {93500F28-C4DF-4F57-AF6B-D1E3250E45AF}
+	EndGlobalSection
+EndGlobal
