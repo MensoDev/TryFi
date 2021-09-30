@@ -1,6 +1,5 @@
 ﻿using TryFi.Hotspot.Domain.Entities;
 using TryFi.Kernel.Domain.Data;
-using TryFi.Kernel.Domain.DomainObjects;
 
 namespace TryFi.Hotspot.Domain.Repositories
 {
@@ -9,8 +8,8 @@ namespace TryFi.Hotspot.Domain.Repositories
 
         ValueTask RegisterPlanAsync(Plan plan);
 
-        Task<PagingResult<Plan>> GetPlansAsync();
-        Task<PagingResult<Plan>> GetPlansAsync(Paging<Plan> paging);
+        Task<IEnumerable<Plan>> GetPlansAsync(int page, int itemsPerPage);
+        IQueryable<Plan> GetPlans();
 
     }
 }

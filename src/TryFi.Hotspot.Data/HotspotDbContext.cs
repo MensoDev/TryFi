@@ -1,17 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TryFi.Hotspot.Data.Extensions;
 using TryFi.Hotspot.Domain.Entities;
 using TryFi.Kernel.Domain.Communication.Mediator;
+using TryFi.Kernel.Domain.Data;
 using TryFi.Kernel.Domain.Messages;
 
 namespace TryFi.Hotspot.Data
 {
-    public  class HotspotDbContext : DbContext
+    public  class HotspotDbContext : DbContext, IUnitOfWork
     {
         private readonly IMediatorHandler _mediatorHandler;
 
