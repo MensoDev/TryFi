@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Queries\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\TryFi.Hotspot.Domain\TryFi.Hotspot.Domain.csproj" />
     <ProjectReference Include="..\TryFi.Kernel.Domain\TryFi.Kernel.Domain.csproj" />
   </ItemGroup>
