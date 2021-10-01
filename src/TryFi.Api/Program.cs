@@ -16,10 +16,6 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddTryFi(builder.Configuration);
 
-
-
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

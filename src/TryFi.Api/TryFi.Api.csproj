@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TryFi.Hotspot.Application\TryFi.Hotspot.Application.csproj" />
     <ProjectReference Include="..\TryFi.Hotspot.Data\TryFi.Hotspot.Data.csproj" />
+    <ProjectReference Include="..\TryFi.Models\TryFi.Models.csproj" />
   </ItemGroup>
 
 </Project>
