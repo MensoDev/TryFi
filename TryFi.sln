@@ -17,13 +17,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Hotspot", "3 - Hotspot"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Network", "4 - Network", "{0D99D77E-BD5C-4751-B5B8-81516CE52E24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryFi.Kernel.Domain", "src\TryFi.Kernel.Domain\TryFi.Kernel.Domain.csproj", "{76A7A43C-7556-4B13-95C0-0BBE36E57688}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryFi.Kernel.Domain", "src\TryFi.Kernel.Domain\TryFi.Kernel.Domain.csproj", "{76A7A43C-7556-4B13-95C0-0BBE36E57688}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryFi.Hotspot.Domain", "src\TryFi.Hotspot.Domain\TryFi.Hotspot.Domain.csproj", "{253BE271-4A5C-4458-92DD-D537AB0BEEC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryFi.Hotspot.Domain", "src\TryFi.Hotspot.Domain\TryFi.Hotspot.Domain.csproj", "{253BE271-4A5C-4458-92DD-D537AB0BEEC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryFi.Hotspot.Data", "src\TryFi.Hotspot.Data\TryFi.Hotspot.Data.csproj", "{0435513F-646A-4438-8DEB-E5CED35E8591}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryFi.Hotspot.Data", "src\TryFi.Hotspot.Data\TryFi.Hotspot.Data.csproj", "{0435513F-646A-4438-8DEB-E5CED35E8591}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryFi.Hotspot.Application", "src\TryFi.Hotspot.Application\TryFi.Hotspot.Application.csproj", "{03A4972E-5617-4109-9DBE-A61F68CC6B93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryFi.Hotspot.Application", "src\TryFi.Hotspot.Application\TryFi.Hotspot.Application.csproj", "{03A4972E-5617-4109-9DBE-A61F68CC6B93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - ApiRest", "1 - ApiRest", "{038FA3EE-0D8B-4E9E-85AB-E3240B35D923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryFi.Api", "src\TryFi.Api\TryFi.Api.csproj", "{411E33C8-FBE6-4C88-82F0-97ED28A8E238}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +51,10 @@ Global
 		{03A4972E-5617-4109-9DBE-A61F68CC6B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03A4972E-5617-4109-9DBE-A61F68CC6B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03A4972E-5617-4109-9DBE-A61F68CC6B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{411E33C8-FBE6-4C88-82F0-97ED28A8E238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{411E33C8-FBE6-4C88-82F0-97ED28A8E238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{411E33C8-FBE6-4C88-82F0-97ED28A8E238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{411E33C8-FBE6-4C88-82F0-97ED28A8E238}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +68,8 @@ Global
 		{253BE271-4A5C-4458-92DD-D537AB0BEEC9} = {E575AECC-E71C-4A29-ACEA-285E96096179}
 		{0435513F-646A-4438-8DEB-E5CED35E8591} = {E575AECC-E71C-4A29-ACEA-285E96096179}
 		{03A4972E-5617-4109-9DBE-A61F68CC6B93} = {E575AECC-E71C-4A29-ACEA-285E96096179}
+		{038FA3EE-0D8B-4E9E-85AB-E3240B35D923} = {34DE9A45-1291-48EF-9C9D-E591B736BFDB}
+		{411E33C8-FBE6-4C88-82F0-97ED28A8E238} = {038FA3EE-0D8B-4E9E-85AB-E3240B35D923}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93500F28-C4DF-4F57-AF6B-D1E3250E45AF}

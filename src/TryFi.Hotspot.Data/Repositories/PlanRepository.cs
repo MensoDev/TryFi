@@ -19,6 +19,8 @@ namespace TryFi.Hotspot.Data.Repositories
 
         public IUnitOfWork UnitOfWork => _dbContext;
 
+        
+
         public async ValueTask RegisterPlanAsync(Plan plan)
         {
             AssertionConcern.NotNull(plan, "It is not possible to register a null Plan");
@@ -26,7 +28,7 @@ namespace TryFi.Hotspot.Data.Repositories
         }
 
 
-        public async Task<IEnumerable<Plan>> GetPlansAsync(int page, int itemsPerPage)
+        public async Task<IEnumerable<Plan>> GetPlansPaginationAsync(int page, int itemsPerPage)
         {
             return await _dbContext
                 .Plans
@@ -40,19 +42,22 @@ namespace TryFi.Hotspot.Data.Repositories
             return _dbContext.Plans.AsNoTracking().AsQueryable();
         }
 
-        //TODO: Esse codigo ser migrado para um lugar mais adequado onde possa ser melhor reutilizado pela aplicação
+        public async ValueTask<Plan> GetPlanByIdAsync(Guid planId)
+        {
+            return await _dbContext.Plans.FirstOrDefaultAsync(p => p.Id == planId);
+        }
 
-        //private static int GetTotalPages(int itemsPerPage, int totalItems)
-        //{
-        //    double total = (double)totalItems / (double)itemsPerPage;
-        //    double totalPages = Math.Ceiling(total);
-        //    return (int)totalPages;
-        //}
+        public async ValueTask<int> GetPlansCountAsync()
+        {
+            return await _dbContext.Plans.CountAsync();
+        }
 
         public void Dispose()
         {
             _dbContext.Dispose();
             GC.SuppressFinalize(this);
         }
+
+       
     }
 }

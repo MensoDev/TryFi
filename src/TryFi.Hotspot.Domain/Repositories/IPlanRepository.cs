@@ -8,8 +8,13 @@ namespace TryFi.Hotspot.Domain.Repositories
 
         ValueTask RegisterPlanAsync(Plan plan);
 
-        Task<IEnumerable<Plan>> GetPlansAsync(int page, int itemsPerPage);
+
+        ValueTask<Plan> GetPlanByIdAsync(Guid planId);
+
+        Task<IEnumerable<Plan>> GetPlansPaginationAsync(int page, int itemsPerPage);
         IQueryable<Plan> GetPlans();
+
+        ValueTask<int> GetPlansCountAsync();
 
     }
 }

@@ -1,24 +1,24 @@
 ﻿namespace TryFi.Kernel.Domain.DomainObjects
 {
-    public class PagingResult<T>
+    public record PagingResult<T>
     {
-        public PagingResult(int page, int totalPages, int totalItems, bool success, string message, IEnumerable<T> value)
+        public PagingResult(int currentPage, int totalItems, int itemsPerPage, IEnumerable<T> value)
         {
-            Page = page;
-            TotalPages = totalPages;
+            CurrentPage = currentPage;
             TotalItems = totalItems;
-            Success = success;
-            Message = message;
+            TotalPages = GetTotalPages(itemsPerPage, totalItems);
             Value = value;
         }
 
-        public int Page { get; private set; }
-        public int TotalPages { get; private set; }
-        public int TotalItems { get; private set; }
+        public int CurrentPage { get; init; }
+        public int TotalPages { get; init; }
+        public int TotalItems { get; init; }
+        public bool HasValue => Value != null && Value.Any();
+        public IEnumerable<T> Value { get; init; }
 
-        public bool Success { get; private set; }
-        public string Message { get; set; }
-
-        public IEnumerable<T> Value { get; private set; }
+        private static int GetTotalPages(int itemsPerPage, int totalItems)
+        {
+            return (int)Math.Ceiling((double)totalItems / itemsPerPage);
+        }
     }
 }
