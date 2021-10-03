@@ -25,7 +25,7 @@ namespace TryFi.Models.Hotspot
         public string Upload { get;  set; }
 
         [Required]
-        [MinLength(3)]
+        [MinLength(2)]
         public string Download { get;  set; }
     }
 }

@@ -33,7 +33,7 @@ namespace TryFi.Hotspot.Application.Commands
                 .WithMessage("Name is required");
 
             RuleFor(x => x.Name)
-                .MaximumLength(3)
+                .MinimumLength(3)
                 .WithMessage("The name must be at least three characters");
 
             RuleFor(x => x.Download)

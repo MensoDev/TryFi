@@ -1,11 +1,9 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TryFi.Api.Extensions;
 using TryFi.Hotspot.Application.Commands;
 using TryFi.Hotspot.Application.Queries;
 using TryFi.Kernel.Domain.Communication.Mediator;
-using TryFi.Kernel.Domain.DomainObjects;
 using TryFi.Kernel.Domain.Messages.Notifications;
 using TryFi.Models;
 using TryFi.Models.Hotspot;
@@ -33,7 +31,7 @@ namespace TryFi.Api.Controllers
         }
 
 
-        [HttpGet]
+        [HttpPost]
         public async Task<ActionResult<ApiResult>> RegisterPlanAsync([FromBody] RegisterPlanCommandModel model)
         {           
 

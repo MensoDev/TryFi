@@ -28,7 +28,7 @@ namespace TryFi.Hotspot.Domain.Entities
 
         public IReadOnlyCollection<Subscription> Subscriptions => _subscriptions;
 
-        public string RegistrationDate { get; private set; }
+        public DateTime RegistrationDate { get; private set; }
 
 
         public override void Validate()

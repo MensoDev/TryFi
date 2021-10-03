@@ -31,8 +31,8 @@ namespace TryFi.Hotspot.Domain.Entities
         public Login Login { get; private set; }
         public Guid LoginId { get; private set; }
 
+        public DateTime RegistrationDate { get; private set; }
 
-        public string RegistrationDate { get; private set; }
 
         public override void Validate()
         {

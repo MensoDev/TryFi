@@ -27,6 +27,9 @@ namespace TryFi.Hotspot.Domain.Entities
         public Subscription Subscription { get; private set; }
         public Guid SubscriptionId { get; private set; }
 
+        public DateTime RegistrationDate { get; private set; }
+
+
         public override void Validate()
         {
             AssertionConcern.NotEmpty(UserName, "UserName is Required");

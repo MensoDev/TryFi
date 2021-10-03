@@ -19,7 +19,6 @@ namespace TryFi.Hotspot.Data.Configurations
                 .HasOne(p => p.Login)
                 .WithOne(p => p.Subscription)
                 .HasForeignKey<Login>(p => p.SubscriptionId)
-                .HasForeignKey<Subscription>(p => p.LoginId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             builder
